@@ -22,10 +22,66 @@
         </nav>
 
         <main>
+            <article>
+                <ul>            
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+            <span>Prix total : 00.00€</span>
+            <form id="customer-info">
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" name="lastname" required >
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname" required >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required >
+                </div>
+                <div class="form-group">
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" name="city" required >
+                </div>
+                <div class="form-group">
+                    <label for="street_1">Rue 1</label>
+                    <input type="text" id="street_1" name="street_1" required >
+                </div>
+                <div class="form-group">
+                    <label for="street_2">Rue 2 (optionnel)</label>
+                    <input type="text" id="street_2" name="street_2" >
+                </div>
+                <div class="form-group">
+                    <label for="postcode">Code postal</label>
+                    <input type="text" id="postcode" name="postcode" minlength="5" maxlength="5" required >
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" required >
+                </div>
+            </form>
+            <form id="payment-method">
+                <div class="form-group">
+                    <label for="card">Carte bleue</label>
+                    <input type="radio" id="card" name="card" required >
+                </div>
+                <div class="form-group">
+                    <label for="check">Chèque</label>
+                    <input type="radio" id="check" name="check" required >
+                </div>
+                <div class="form-group">
+                    <label for="cash_on_delivery">Paiement à la livraison</label>
+                    <input type="radio" id="cash_on_delivery" name="cash_on_delivery" required >
+                </div>
+            </form>
         </main>
         
         <footer>
-            <p>©Copyright 2020 par "Site E-Commerce". Tous droits réservés.</p>
+            <p>©Copyright 2020 par "Orinoco". Tous droits réservés.</p>
             <ul>
                 <li><span class="fa fa-twitter icon-md"></span></li>
                 <li><span class="fa fa-facebook icon-md"></span></li>
