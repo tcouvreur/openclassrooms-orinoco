@@ -22,3 +22,17 @@ ul li{
     display: inline;
     padding: 10px;
 }
+
+footer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    padding: 5px;
+}
+
+footer ul li {
+    padding: 20px;
+}
