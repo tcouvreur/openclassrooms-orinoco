@@ -4,10 +4,20 @@
         <meta charset="utf-8" lang="fr">
         <title>Accueil - Orinoco</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
-        <script src="js/pages/home.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+        <!-- composants -->
+        <script src="js/components/cart.js"></script>
+
+        <!-- pages -->
+        <script src="js/pages/homePage.js"></script>
+        <script src="js/pages/pageProduit.js"></script>
+
+        <!-- éléments structurant -->
         <script src="js/pageManager.js"></script>
         <script src="js/datamanager.js"></script>
+
+        <!-- lancement application -->
         <script src="js/index.js" defer></script>
     </head>
     <body>
@@ -20,12 +30,12 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="cart.html">Mon Panier</a></li>
+                    <li id="cart" class="cartIcon"><a href="cart.html">Mon Panier</a></li>
                     <li><a href="index.html">Contactez-nous</a></li>
                 </ul>
             </nav>
         </header>
-
+        
         <main>
 
         </main>

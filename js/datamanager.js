@@ -13,10 +13,19 @@ class DataManager{
     this.src = src;
   }
 
-  async getAllData(callback){
-    let data = await fetch(this.src);
-    data = await data.json();
-    this.products = data;
-    callback(data);
+  async getAllData(){
+    const data = await fetch(this.src);
+    this.products = await data.json();
+    return this.products;
+  }
+
+  getCartContent(){
+    const content = localStorage.getItem("cart");
+    return content === null ? [] : JSON.parse(content);
+  }
+
+  saveCartContent(cartContent){
+    localStorage.setItem("cart", JSON.stringify(cartContent));
+
   }
 }

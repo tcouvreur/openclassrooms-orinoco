@@ -22,17 +22,14 @@ class PageProduit{
   variantes; //:Array
   price; //:Number
 
-  constructor(){
-
+  constructor(productID){
+    alert(productID);
   }
 
   personnalise(){
 
   }
   affiche(){
-
-  }
-  ajouterAuPanier(){
 
   }
   
