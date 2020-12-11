@@ -2,17 +2,19 @@ class PageManager{
   constructor(target){
     this.target = target;
 
-    this.showPage(window.location.search.slice(1, 8));
+    this.showPage(window.location.search.slice(1));
   }
 
-  async showPage(classPage){
+  async showPage(uri){
+
+    const classPage = uri.slice(0,7);
     
     switch(classPage){
       case "contact" : 
         this.page = new Contact();
         break;
       case "product" : 
-        const productId = window.location.search.split("-",2)[1];
+        const productId = uri.split("-",2)[1];
         this.page = new PageProduit(productId);
         break;
       default : 
