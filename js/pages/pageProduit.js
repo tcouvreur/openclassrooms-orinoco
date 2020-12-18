@@ -1,34 +1,49 @@
 class PageProduit{
   /**
-   * [description]
+   * [imageUrl]
    * @type String
    */
   imageUrl;
+
   /**
-   * [description]
+   * [name]
    * @type String
    */
   name;
+
   /**
    * [description]
    * @type String
    */
   description;
+
   /**
-   * [description]
+   * [_id]
    * @type String
    */
   _id;
-  variantes; //:Array
-  price; //:Number
+
+  /**
+   * [variantes]
+   * @type String
+   */
+  variantes;
+
+  /**
+   * [price]
+   * @type String
+   */
+  price;
 
   constructor(productID){
+    this._id = productID;
     alert(productID);
   }
 
   personnalise(){
 
   }
+
   affiche(){
 
   }
