@@ -13,21 +13,23 @@ class PageManager{
       case "contact" : 
         this.page = new Contact();
         break;
+        case "panier" : 
+          this.page = new CartPage();
+          break;
       case "product" : 
         const productId = uri.split("-",2)[1];
         this.page = new PageProduit(productId);
         break;
       default : 
         this.page = new HomePage();        
-        this.target.innerHTML = await this.page.getHTML();
         break;
     }
+    this.target.innerHTML = await this.page.getHTML();
 
   }
 
   changePage(newPage){
-    // window.location.href = window.location.href+"?"+newPage; 
-    // alert(newPage)   
+    window.history.pushState({}, '', window.location.href+"?"+newPage);
     this.showPage(newPage);
   }
 }

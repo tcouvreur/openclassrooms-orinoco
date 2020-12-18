@@ -12,6 +12,7 @@
         <!-- pages -->
         <script src="js/pages/homePage.js"></script>
         <script src="js/pages/pageProduit.js"></script>
+        <script src="js/pages/cartPage.js"></script>
 
         <!-- éléments structurant -->
         <script src="js/pageManager.js"></script>
@@ -30,7 +31,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li id="cart" class="cartIcon"><a href="cart.html">Mon Panier</a></li>
+                    <li id="cart" class="cartIcon" onclick="pageManager.changePage('panier')">Mon Panier</li>
                     <li><a href="index.html">Contactez-nous</a></li>
                 </ul>
             </nav>

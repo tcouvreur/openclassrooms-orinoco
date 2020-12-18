@@ -1,4 +1,4 @@
-/* global dataManager */
+/* global dataManager pageManager */
 
 class Cart{
 
