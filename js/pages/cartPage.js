@@ -13,6 +13,7 @@ class CartPage{
     for(let i=0, size = cart.content.length; i<size; i++){
       content += await this.produitPanier(cart.content[i]);
     }
+    content += `<p>Total : ${this.total}<p>`;
     return content;
   }
 
@@ -20,7 +21,7 @@ class CartPage{
     const data = await dataManager.getProductInfo(idProduct);
     this.total += data.price;
     return `
-      <article><i class="" onclick="pageManager.page.removeProduct("${idProduct}")></i> ${data.name} | ${data.price/100}
+      <article><i class="fas fa-trash-alt" onclick="cart.rem('${idProduct}');"></i> ${data.name} | ${data.price/100}
     `;
   }
 

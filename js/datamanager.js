@@ -28,6 +28,10 @@ class DataManager{
     localStorage.setItem("cart", JSON.stringify(cartContent));
   }
 
+  removeProduct(productID){
+    localStorage.removeItem("cart", productID);
+  }
+
   /**
    * [getProductInfo description]
    *

@@ -25,4 +25,15 @@ class Cart{
     this.renderIcon();
   }
 
+  rem(productId){
+    this.content.splice(productId);
+      var index = content.indexOf(value);
+      if (index > -1) {
+        content.splice(index, 1);
+      }
+    
+    dataManager.saveCartContent(this.conten);
+    this.renderIcon();
+  }
+
 }

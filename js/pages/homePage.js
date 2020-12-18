@@ -21,13 +21,9 @@ class HomePage {
         <img src="${product.imageUrl}" width="200px">
         <h2>${product.name}</h2>
         <p>${product.price / 100} €</p>
-        <button onclick="cart.add('${product._id}')">ajouter au panier</button>
+        <button onclick="cart.add('${product._id}');cartadd(event)">ajouter au panier</button>
         <button>plus de détails</button>
       </article>
       `;
   }
-
-  // changePage(productId) {
-  //   alert(productId);
-  // }
 }
