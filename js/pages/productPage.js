@@ -1,4 +1,5 @@
-class PageProduit{
+/* global dataManager */
+class productPage{
   /**
    * [imageUrl]
    * @type String

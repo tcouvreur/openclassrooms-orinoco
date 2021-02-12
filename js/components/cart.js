@@ -1,6 +1,5 @@
 /* global dataManager pageManager */
-
-class Cart{
+class Cart {
 
   /**
    * [constructor description]
@@ -29,6 +28,12 @@ class Cart{
     this.content.splice( this.content.indexOf(productId), 1);
     this.renderIcon();
     pageManager.showPage("panier");
+  }
+
+  clear(){
+    localStorage.clear();
+    this.content = [];
+    this.renderIcon();
   }
 
 }

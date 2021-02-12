@@ -58,3 +58,21 @@ footer ul li {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
 }
+
+modale {
+    position: absolute;
+    z-index: 2;
+    background: #000000ad;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+modale h1{
+    background: white;
+    padding: 3rem;
+}
