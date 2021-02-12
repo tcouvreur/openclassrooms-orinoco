@@ -26,14 +26,9 @@ class Cart{
   }
 
   rem(productId){
-    this.content.splice(productId);
-      var index = content.indexOf(value);
-      if (index > -1) {
-        content.splice(index, 1);
-      }
-    
-    dataManager.saveCartContent(this.conten);
+    this.content.splice( this.content.indexOf(productId), 1);
     this.renderIcon();
+    pageManager.showPage("panier");
   }
 
 }
